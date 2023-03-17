@@ -29,18 +29,17 @@
 
       <div class="progress">
         <div class="progress-bar">
-        <input type="range" class="rangeClass" min="8" max="36" step="1" value="20" onchange="myFunction()" >
-        <!-- <input type="range" min="1" max="5" step="1" value="3" class="myrange"> -->
+        <input type="range" class="rangeClass" min="8" max="36" step="1" value="20", onchange="mainFun()"  >
         </div>
+        <div class="monthly-container">
+          <div class="toggle">
+            <div class="toggle-button" onclick="toogleFun()"></div>
+          </div>
+          
+          <div class="text-monthly">Monthly Billing</div>
 
 
-        <div class="monthly">
-          <span>Monthly Billing</span>
-          <label for="switch">
-            <input type="checkbox" name="" id="">
-            <span class="slider"></span>
-          </label>
-          <span>Yearly Billing</span>
+          <div class="text-yearly">Yearly Billing</div>
           <span class="discount">25% discount</span>
         </div>
       </div>
