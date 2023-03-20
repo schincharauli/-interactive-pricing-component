@@ -73,17 +73,18 @@ body {
 }
 
 input#price-slider {
-  width: 280px;
-  border-radius: 5px;
-  -webkit-appearance: none;
-  height: 10px;
-  background: linear-gradient(
-    to right,
+    margin-top: 40px;
+    width: 280px;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    height: 10px;
+    background: linear-gradient(
+        to right,
     hsl(174, 77%, 80%) 0%,
     hsl(174, 77%, 80%) 50%,
     hsl(224, 65%, 95%) 0%,
     hsl(224, 65%, 95%) 100%
-  );
+  ); 
   transition: background 450ms ease-in;
 }
 
@@ -104,6 +105,22 @@ input#price-slider::-webkit-slider-thumb:hover {
   cursor: pointer;
 }
 
+
+
+.price{
+    font-size: 32px;
+    font-weight: 800;
+    color: #293356;
+    line-height: 43.71px;
+    margin-top: 24px;
+}
+
+.month{
+    font-size: 14px;
+    font-weight: 600;
+    color: #848EAD;
+}
+
 .monthly-container {
   margin-top: 100px;
   padding: 10px;
@@ -112,18 +129,31 @@ input#price-slider::-webkit-slider-thumb:hover {
   justify-content: space-between;
 }
 
-.toggle {
-  margin-left: 100px;
-  margin-top: 180px;
+
+.progress{
+    font-size: 12px;
+    color: #848EAD;
+
 }
+
+.discount{
+    width: 45px;
+    height: 20px;
+    background-color: #FEEDE8;
+    border-radius: 9.5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 
 .monthly-container .toggle {
   position: absolute;
   transform: translate(-50% -50%);
-  top: 0;
-  left: 0;
-  width: 90px;
-  height: 50px;
+  /* top: 0;
+  left: 0; */
+  width: 42px;
+  height: 22px;
   background: #cfd8ef;
   border-radius: 30px;
   transform: 0.3s;
@@ -133,12 +163,13 @@ input#price-slider::-webkit-slider-thumb:hover {
   position: absolute;
   top: 7.5px;
   left: 7.5px;
-  width: 35px;
-  height: 35px;
+  width: 14px;
+  height: 14px;
   background: #feffff;
   border-radius: 50px;
   cursor: pointer;
   transform: 0.3s;
+  
 }
 
 .toggle.active {

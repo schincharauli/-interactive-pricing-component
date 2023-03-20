@@ -6,24 +6,21 @@ let toggle = document.querySelector(".toggle");
 function toogleFun() {
   toggle.classList.toggle("active");
   mainFun();
+  // sliderEffect();
+  
 }
 
-document.getElementById("price-slider").oninput = function () {
-  let value = ((this.value - this.min) / (this.max - this.min)) * 100;
-  this.style.background =
-    "linear-gradient(to right, #82CFD0 0%, #82CFD0 " +
-    value +
-    "%, #fff " +
-    value +
-    "%, white 100%)";
-};
 
+  
+
+  
 function mainFun() {
   if (toggle.classList.contains("active")) {
     discountedRange();
   } else {
     basicRange();
   }
+ 
 }
 
 function discountedRange() {
@@ -68,4 +65,19 @@ function basicRange() {
     pageViewers.innerHTML = "1M";
     outputPrice.innerHTML = "36";
   }
+}
+
+
+
+
+function sliderEffect(){
+  document.getElementById("price-slider").oninput = function () {
+    let value = ((this.value - this.min) / (this.max - this.min)) * 100;
+    this.style.background =
+      "linear-gradient(to right, #82CFD0 0%, #82CFD0 " +
+      value +
+      "%, #fff " +
+      value +
+      "%, white 100%)";
+  };
 }
