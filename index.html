@@ -1,81 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <img class="patern-image" src="./images/pattern-circles.svg" alt="" />
 
-  <main class="container">
-    <img class="patern-image" src="./images/pattern-circles.svg" alt="">
-
-    <section class="headline">
-      <h1>Simple, traffic-based pricing</h1>
-      <div class="headline-paragraph">
-        <p>Sign-up for our 30-day trial. </p>
-        <p> No credit card required.</p>
-      </div>
-    </section>
-
-    
-
+      <section class="headline">
+        <h1>Simple, traffic-based pricing</h1>
+        <div class="headline-paragraph">
+          <p>Sign-up for our 30-day trial.</p>
+          <p>No credit card required.</p>
+        </div>
+      </section>
 
       <div class="card">
-
-
-      <div class="tarif">
-        <div class="page-views">
-          <span class="views">100K</span> page views
-        </div>
-        <div class="progress-bar">
-          <input type="range" id="price-slider" class="rangeClass" min="8" max="36" step="1" value="20", oninput="mainFun()"  >
+        <div class="tarif">
+          <div class="page-views">
+            <span class="views">100K</span> page views
           </div>
-        <div class="price">
-          <span>$ <span id="valBox" class="priceFix">16</span>.00</span>
-          <span class="month">/ month</span>
+          <div class="progress-bar">
+            <input
+              type="range"
+              id="price-slider"
+              class="rangeClass"
+              min="8"
+              max="36"
+              step="1"
+              value="20"
+              ,
+              oninput="mainFun()"
+            />
+          </div>
+          <div class="price">
+            <span>$ <span id="valBox" class="priceFix">16</span>.00</span>
+            <span class="month">/ month</span>
+          </div>
+        </div>
+
+        <div class="progress">
+          <div class="monthly-container">
+            <div class="toggle">
+              <div class="toggle-button" onclick="toogleFun()"></div>
+            </div>
+
+            <div class="text-monthly">Monthly Billing</div>
+
+            <div class="text-yearly">Yearly Billing</div>
+            <span class="discount">25% discount</span>
+          </div>
+
+          <hr />
+
+          <div class="start">
+            <ul>
+              <li>Unlimited websites</li>
+              <li>100% data ownership</li>
+              <li>Email reports</li>
+            </ul>
+            <button class="button">Start my trial</button>
+          </div>
         </div>
       </div>
+    </main>
 
-      <div class="progress">
-        
-        <!-- <div class="monthly-container">
-          <div class="toggle">
-            <div class="toggle-button" onclick="toogleFun()"></div>
-          </div> -->
-          
-          <div class="text-monthly">Monthly Billing</div>
-
-
-          <div class="text-yearly">Yearly Billing</div>
-          <span class="discount">25% discount</span>
-        </div>
-
-      <hr>
-
-      <div class="start">
-        <ul>
-          <li>Unlimited websites</li>
-          <li>100% data ownership</li>
-          <li>Email reports</li>
-        </ul>
-        <button class="button">Start my trial</button>
-      </div>
-    </div>
-
-  </div>
-
-
-  </main>
-
-  
-
-  
-
-  
-  
-
-<script src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
