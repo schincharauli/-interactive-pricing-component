@@ -9,32 +9,41 @@
 <body>
 
   <main class="container">
+    <img class="patern-image" src="./images/pattern-circles.svg" alt="">
+
     <section class="headline">
       <h1>Simple, traffic-based pricing</h1>
-      <p>Sign-up for our 30-day trial. No credit card required. </p>
+      <div class="headline-paragraph">
+        <p>Sign-up for our 30-day trial. </p>
+        <p> No credit card required.</p>
+      </div>
     </section>
-    <aside>
+
+    
+
+
+      <div class="card">
+
+
       <div class="tarif">
         <div class="page-views">
           <span class="views">100K</span> page views
         </div>
+        <div class="progress-bar">
+          <input type="range" class="rangeClass" min="8" max="36" step="1" value="20", oninput="mainFun()"  >
+          </div>
         <div class="price">
           <span>$ <span id="valBox" class="priceFix">16</span>.00</span>
           <span class="month">/ month</span>
         </div>
       </div>
 
-
-
-
       <div class="progress">
-        <div class="progress-bar">
-        <input type="range" class="rangeClass" min="8" max="36" step="1" value="20", onchange="mainFun()"  >
-        </div>
-        <div class="monthly-container">
+        
+        <!-- <div class="monthly-container">
           <div class="toggle">
             <div class="toggle-button" onclick="toogleFun()"></div>
-          </div>
+          </div> -->
           
           <div class="text-monthly">Monthly Billing</div>
 
@@ -42,7 +51,7 @@
           <div class="text-yearly">Yearly Billing</div>
           <span class="discount">25% discount</span>
         </div>
-      </div>
+
       <hr>
 
       <div class="start">
@@ -53,7 +62,11 @@
         </ul>
         <button class="button">Start my trial</button>
       </div>
-    </aside>
+    </div>
+
+  </div>
+
+
   </main>
 
   

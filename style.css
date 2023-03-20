@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +9,9 @@
 body{
     width: 100vw;
     height: 100vh;
+    font-family: 'Manrope', sans-serif;
+    background-image: url("./images/bg-pattern.svg");
+    background-repeat: no-repeat;
 }
 
 .container{
@@ -16,9 +21,69 @@ body{
     align-items: center;
 }
 
-.tarif{
-    margin-top: 50px;
+.patern-image{
+    display: flex;
+    margin: 70px auto;
 }
+
+.headline{
+    padding: 32px;
+    margin-top: -170px;
+    text-align: center;
+}
+
+.headline h1{
+    font-size: 20px;
+    font-weight: 800;
+    color: #293356;
+}
+
+.headline p{
+    font-size: 13px;
+    font-weight: 600;
+    color: #848EAD;
+
+}
+
+.card{
+    width: 327px;
+    height: auto;
+    background-color: #e8ebf4;
+    border-radius: 8%;
+}
+
+
+.tarif{
+    padding-top: 32px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.progress-bar{
+    display: flex;
+    margin: auto;
+
+}
+
+.rangeClass{
+    width: 280px;
+    -webkit-appearance: none;
+    border-radius: 5px;
+}
+
+.page-views{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #848EAD;
+    font-weight: 800;
+
+}
+
+
+
 
 
 .monthly-container{

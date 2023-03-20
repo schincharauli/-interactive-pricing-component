@@ -8,8 +8,6 @@ const outputPrice = document.querySelector('#valBox');
 const rangeClass = document.querySelector('.rangeClass');
 // console.log(typeof rangeClass);
 
-// rangeClass.value = number;
-// console.log(typeof rangeClass);
 
 
 
@@ -18,6 +16,7 @@ let toggle = document.querySelector('.toggle');
 
 function toogleFun(){
     toggle.classList.toggle("active");
+    mainFun();
 
 }
 
