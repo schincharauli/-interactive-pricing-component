@@ -24,9 +24,7 @@ Users should be able to:
 - Use the slider and toggle to see prices for different page view numbers
 
 ### Screenshot
-![](./design/desktop-design.jpg)
-![](./design/active-states.jpg)
-![](./design/mobile-design.jpg)
+![](./design/desktop-preview.jpg)
 
 
 
