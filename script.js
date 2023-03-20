@@ -6,21 +6,16 @@ let toggle = document.querySelector(".toggle");
 function toogleFun() {
   toggle.classList.toggle("active");
   mainFun();
-  // sliderEffect();
-  
 }
 
-
-  
-
-  
 function mainFun() {
   if (toggle.classList.contains("active")) {
     discountedRange();
+    sliderEffect();
   } else {
     basicRange();
+    sliderEffect();
   }
- 
 }
 
 function discountedRange() {
@@ -67,11 +62,8 @@ function basicRange() {
   }
 }
 
-
-
-
-function sliderEffect(){
-  document.getElementById("price-slider").oninput = function () {
+function sliderEffect() {
+  document.getElementById("price-slider").onchange = function () {
     let value = ((this.value - this.min) / (this.max - this.min)) * 100;
     this.style.background =
       "linear-gradient(to right, #82CFD0 0%, #82CFD0 " +

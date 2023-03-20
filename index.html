@@ -25,8 +25,14 @@
 
       <div class="card">
         <div class="tarif">
-          <div class="page-views">
-            <span class="views">100K</span> page views
+          <div class="price-column">
+            <div class="page-views">
+              <span class="views">100K</span> page views
+            </div>
+            <div class="price">
+              <span>$ <span id="valBox" class="priceFix">16</span>.00</span>
+              <span class="month">/ month</span>
+            </div>
           </div>
           <div class="progress-bar">
             <input
@@ -38,23 +44,17 @@
               step="1"
               value="20"
               ,
-              oninput="mainFun()" 
+              oninput="mainFun()"
             />
-          </div>
-          <div class="price">
-            <span>$ <span id="valBox" class="priceFix">16</span>.00</span>
-            <span class="month">/ month</span>
           </div>
         </div>
 
         <div class="progress">
           <div class="monthly-container">
-            <div class="toggle">
-              <div class="toggle-button" onclick="toogleFun()" ></div>
-            </div>
-
             <div class="text-monthly">Monthly Billing</div>
-
+            <div class="toggle">
+              <div class="toggle-button" onclick="toogleFun()"></div>
+            </div>
             <div class="text-yearly">Yearly Billing</div>
             <span class="discount">-25%</span>
           </div>
@@ -63,16 +63,47 @@
 
           <div class="start">
             <ul>
-              <li>Unlimited websites</li>
-              <li>100% data ownership</li>
-              <li>Email reports</li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+                  <path
+                    fill="none"
+                    stroke="#10D8C4"
+                    stroke-width="2"
+                    d="M1 4.134l1.907 1.908L7.949 1"
+                  />
+                </svg>
+                Unlimited websites
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+                  <path
+                    fill="none"
+                    stroke="#10D8C4"
+                    stroke-width="2"
+                    d="M1 4.134l1.907 1.908L7.949 1"
+                  />
+                </svg>
+                100% data ownership
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+                  <path
+                    fill="none"
+                    stroke="#10D8C4"
+                    stroke-width="2"
+                    d="M1 4.134l1.907 1.908L7.949 1"
+                  />
+                </svg>
+                Email reports
+              </li>
             </ul>
-            <button class="button">Start my trial</button>
+            <div class="btn">
+              <button class="button">Start my trial</button>
+            </div>
           </div>
         </div>
       </div>
     </main>
-
     <script src="./script.js"></script>
   </body>
 </html>

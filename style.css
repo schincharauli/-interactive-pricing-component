@@ -47,8 +47,9 @@ body {
 .card {
   width: 327px;
   height: auto;
-  background-color: #e8ebf4;
-  border-radius: 8%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
 }
 
 .tarif {
@@ -73,18 +74,18 @@ body {
 }
 
 input#price-slider {
-    margin-top: 40px;
-    width: 280px;
-    border-radius: 5px;
-    -webkit-appearance: none;
-    height: 10px;
-    background: linear-gradient(
-        to right,
+  margin-top: 40px;
+  width: 280px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  height: 10px;
+  background: linear-gradient(
+    to right,
     hsl(174, 77%, 80%) 0%,
-    hsl(174, 77%, 80%) 50%,
+    hsl(174, 77%, 80%) 40%,
     hsl(224, 65%, 95%) 0%,
     hsl(224, 65%, 95%) 100%
-  ); 
+  );
   transition: background 450ms ease-in;
 }
 
@@ -105,23 +106,24 @@ input#price-slider::-webkit-slider-thumb:hover {
   cursor: pointer;
 }
 
-
-
-.price{
-    font-size: 32px;
-    font-weight: 800;
-    color: #293356;
-    line-height: 43.71px;
-    margin-top: 24px;
+.price {
+  font-size: 32px;
+  font-weight: 800;
+  color: #293356;
+  line-height: 43.71px;
+  margin-top: 90px;
+  position: fixed;
+  margin-left: 80px;
 }
 
-.month{
-    font-size: 14px;
-    font-weight: 600;
-    color: #848EAD;
+.month {
+  font-size: 14px;
+  font-weight: 600;
+  color: #848ead;
 }
 
 .monthly-container {
+  padding: 32px;
   margin-top: 100px;
   padding: 10px;
   display: flex;
@@ -129,47 +131,43 @@ input#price-slider::-webkit-slider-thumb:hover {
   justify-content: space-between;
 }
 
-
-.progress{
-    font-size: 12px;
-    color: #848EAD;
-
+.progress {
+  font-size: 12px;
+  color: #848ead;
 }
 
-.discount{
-    width: 45px;
-    height: 20px;
-    background-color: #FEEDE8;
-    border-radius: 9.5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.discount {
+  width: 45px;
+  height: 20px;
+  background-color: #feede8;
+  border-radius: 9.5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  color: #ff8d68;
 }
-
 
 .monthly-container .toggle {
-  position: absolute;
-  transform: translate(-50% -50%);
-  /* top: 0;
-  left: 0; */
-  width: 42px;
-  height: 22px;
+  position: relative;
+  width: 35px;
+  height: 18px;
   background: #cfd8ef;
   border-radius: 30px;
   transform: 0.3s;
+  box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
 }
 
 .monthly-container .toggle .toggle-button {
-  position: absolute;
-  top: 7.5px;
-  left: 7.5px;
+  position: relative;
+  top: 2px;
+  left: 2.5px;
   width: 14px;
   height: 14px;
   background: #feffff;
   border-radius: 50px;
   cursor: pointer;
   transform: 0.3s;
-  
 }
 
 .toggle.active {
@@ -178,4 +176,128 @@ input#price-slider::-webkit-slider-thumb:hover {
 
 .monthly-container .toggle.active .toggle-button {
   left: 45%;
+}
+
+hr {
+  margin-top: 38px;
+  color: #ecf0fb;
+}
+
+.start {
+  margin-top: 24px;
+}
+
+.start ul li {
+  list-style-type: none;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 11px;
+}
+
+.button {
+  height: 41px;
+  width: 170px;
+  border-radius: 20.5px;
+  background-color: #293356;
+  color: #becdff;
+  font-size: 12px;
+  font-weight: 800;
+  border: none;
+  margin: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .headline-paragraph {
+    display: flex;
+    margin-top: 12px;
+  }
+  .card {
+    width: 540px;
+  }
+
+  .price {
+    margin: 0;
+  }
+
+  .tarif {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-views {
+    position: relative;
+    top: 38px;
+    left: 48px;
+    letter-spacing: 2 px;
+  }
+
+  .price {
+    position: fixed;
+    margin-left: 315px;
+    align-items: center;
+    display: flex;
+  }
+
+  .price span {
+    padding: 1.5px;
+  }
+
+  .rangeClass {
+    display: flex;
+    position: absolute;
+  }
+
+  .rangeClass {
+    width: 228px;
+  }
+
+  .progress-bar {
+    position: fixed;
+    margin-top: 70px;
+    margin-left: 20px;
+  }
+
+  .monthly-container {
+    margin-left: 144px;
+    margin-right: 24px;
+  }
+
+  input#price-slider {
+    width: 450px;
+    margin-left: 24px;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  .start {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 24px 33px 20px;
+  }
+
+  .start ul li {
+    display: flex;
+    align-items: center;
+  }
+
+  .start ul li svg {
+    margin-right: 5px;
+  }
+
+  .button:hover {
+    cursor: pointer;
+    color: #ffffff;
+  }
 }
